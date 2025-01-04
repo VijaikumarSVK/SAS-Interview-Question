@@ -1,0 +1,21 @@
+
+
+/*          Difference between Input and Infile statements            */
+
+/* Infile - This statement is used to identify an External file */
+/* Input -  This statement is used to describe a variable with in the file. */
+
+
+data employee;
+infile 'path\employee.txt' dlm='|' dsd missover firstobs=2;
+input first_name $ lastname $ location $;
+run;
+
+
+
+
+
+
+
+
+
