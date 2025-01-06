@@ -1,0 +1,40 @@
+
+/* youtube link - https://www.youtube.com/@VijaiTheAnalyst */
+
+/* What is the differece between informat and format ? */
+
+/* Informat read the data while Format writes the data. */
+
+/* Informat tell the SAS that a number to be read in a Particular format  */
+/* ddmmyy10 */
+/* mmddyy10 */
+
+/* Format tell the SAS how to print the variable */
+/* Date9 */
+/* WORDDATX19 */
+
+
+data temp;
+input name$ DOJ;
+informat doj mmddyy10.;
+format doj WORDDATX19.;
+datalines;
+vijai 01/07/2022
+kumar 02/08/2005
+;
+run;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
